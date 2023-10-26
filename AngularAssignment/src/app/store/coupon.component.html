@@ -7,7 +7,7 @@
         <button
           type="button"
           class="btn-close"
-          routerLink="/store"
+          (click) ="skipDiscount()"
           aria-label="Close"
         ></button>
       </div>
@@ -16,11 +16,11 @@
         <p>
           <B>Coupon Code:</B><br />
 
-          <small>SUMMERSALE10</small>
+          <small><b>SUMMERSALE10</b></small>
 
           <br />
 
-          Use this coupon Code for getting 10% Discount in your Purchase.
+          Use this coupon Code for getting <b>10%</b> Discount in your Purchase.
         </p>
 
         <button
@@ -31,8 +31,6 @@
         >
           Apply
         </button>
-        <button (click)="addDiscount()" >add</button>
-        <button (click)="skipDiscount()">skip</button>
       </div>
     </div>
   </div>

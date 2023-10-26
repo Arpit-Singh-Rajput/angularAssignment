@@ -11,7 +11,7 @@ export class CouponComponent{
 constructor(private discount :DiscountRepository, private route: Router ){}
 
     addDiscount(){
-        this.discount.setDiscount(10);
+        this.discount.DiscountSetter(10);
         this.route.navigateByUrl('/store')
     }
 

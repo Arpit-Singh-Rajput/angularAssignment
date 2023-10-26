@@ -5,11 +5,11 @@ import { Injectable } from "@angular/core";
 export class DiscountRepository{
     private discountNumber : number = 0
 
-    setDiscount(discountNumber : number){
+    DiscountSetter(discountNumber : number){
         this.discountNumber = discountNumber
     }
 
-    getDiscount(){
+    DiscountGetter(){
         return this.discountNumber
     }
 }
