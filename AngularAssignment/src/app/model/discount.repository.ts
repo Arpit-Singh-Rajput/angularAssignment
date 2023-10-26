@@ -3,13 +3,13 @@ import { Injectable } from "@angular/core";
 @Injectable()
 
 export class DiscountRepository{
-    private discountNumber : number = 0
+    private discountpercent : number = 0
 
-    DiscountSetter(discountNumber : number){
-        this.discountNumber = discountNumber
+    DiscountSetter(discountpercent : number){
+        this.discountpercent = discountpercent
     }
 
     DiscountGetter(){
-        return this.discountNumber
+        return this.discountpercent
     }
 }
